@@ -1,0 +1,1 @@
+<h1><?php header("Refresh:0.1;url=giris"); ?></h1>

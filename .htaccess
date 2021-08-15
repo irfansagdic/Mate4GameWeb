@@ -1,0 +1,65 @@
+RewriteEngine On
+RewriteRule ^giris$ part1/index.php
+RewriteRule ^giris/$ part1/index.php
+
+RewriteRule ^uye_giris$ part1/index.php?do=login
+RewriteRule ^uye_giris/$ part1/index.php?do=login
+RewriteRule ^kayit_ol$ part1/index.php?do=kaydol
+RewriteRule ^kayit_ol/$ part1/index.php?do=kaydol
+RewriteRule ^giris/sayfa/([0-9a-zA-Z-_]+)(/?)$ part1/index.php?sayfa=$1
+RewriteRule ^anasayfa$ part2/index.php
+RewriteRule ^anasayfa/$ part2/index.php
+
+RewriteRule ^anasayfa/bizeulasin$ part2/index.php?do=iletisim
+RewriteRule ^anasayfa/bizeulasin/$ part2/index.php?do=iletisim
+
+RewriteRule ^anasayfa/mesajlar$ part2/index.php?do=mesajlar
+RewriteRule ^anasayfa/mesajlar/$ part2/index.php?do=mesajlar
+
+RewriteRule ^anasayfa/profilim$ part2/index.php?do=profilim
+RewriteRule ^anasayfa/profilim/$ part2/index.php?do=profilim
+
+RewriteRule ^anasayfa/geyik$ part2/index.php?do=geyik
+RewriteRule ^anasayfa/geyik/$ part2/index.php?do=geyik
+
+RewriteRule ^profil/([0-9a-zA-Z-_]+)(/?)$ part2/index.php?do=profil&id=$1
+
+
+RewriteRule ^anasayfa/mesaj/([0-9a-zA-Z-_]+)(/?)$ part2/chat.php?id=$1
+
+
+RewriteRule ^sayfa/([0-9a-zA-Z-_]+)(/?)$ part2/index.php?sayfa=$1
+
+
+
+
+
+
+
+
+
+RewriteRule ^anasayfa/sayfa/([0-9a-zA-Z-_]+)(/?)$ icerik/anasayfa.php?sayfa=$1
+RewriteRule ^uye/mesaj/([0-9a-zA-Z-_]+)(/?)$ icerik/inc/chat.php?id=$1
+RewriteRule ^bildirim/sil/([0-9a-zA-Z-_]+)(/?)$ icerik/anasayfa.php?git=mesajlar&do=$1
+RewriteRule ^uye/profil/([0-9a-zA-Z-_]+)(/?)$ icerik/anasayfa.php?git=profil&id=$1
+
+RewriteRule ^uye/durum/sil/([0-9a-zA-Z-_]+)(/?)$ icerik/inc/durum-sil.php?id=$1
+
+
+RewriteRule ^sifremiunuttum$ sifremiunuttum.php
+RewriteRule ^mesajlar$ icerik/anasayfa.php?git=mesajlar
+RewriteRule ^mesajlar/$ icerik/anasayfa.php?git=mesajlar
+RewriteRule ^odulluyarisma/$ icerik/anasayfa.php?git=odulluyarisma
+RewriteRule ^odulluyarisma$ icerik/anasayfa.php?git=odulluyarisma
+RewriteRule ^sampiyonubil$ icerik/anasayfa.php?git=sampiyonubil
+RewriteRule ^sampiyonubil$ icerik/anasayfa.php?git=sampiyonubil
+RewriteRule ^profilim$ icerik/anasayfa.php?git=profilim
+RewriteRule ^profilim/$ icerik/anasayfa.php?git=profilim
+RewriteRule ^durumlar$ icerik/anasayfa.php?git=durumlar
+RewriteRule ^durumlar/$ icerik/anasayfa.php?git=durumlar
+RewriteRule ^bizeulasin$ icerik/anasayfa.php?git=bizeulasin
+RewriteRule ^bizeulasin/$ icerik/anasayfa.php?git=bizeulasin
+RewriteRule ^cikisyap$ icerik/anasayfa.php?git=cikisyap
+RewriteRule ^cikisyap/$ icerik/anasayfa.php?git=cikisyap
+RewriteRule ^anasayfa$ icerik/anasayfa.php
+RewriteRule ^anasayfa/$ icerik/anasayfa.php
