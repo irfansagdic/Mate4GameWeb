@@ -11,9 +11,9 @@
 	$db="mategame_123";
 	//SİTE İÇİN
 	/*$host="localhost";
-	$user="mategame";
-	$pass="hp38u4gQX1";
-	$db="mategame_123";*/
+	$user="";
+	$pass="";
+	$db="";*/
 	
 	$baglan=new PDO("mysql:host=$host;dbname=$db;charset=utf8;",$user,$pass);
 	/*$mesaj_veritabani="playmate.com_mesaj";
